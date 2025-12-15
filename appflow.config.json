@@ -3,15 +3,10 @@
   "name": "MozzartPaperCordova",
   "id": "com.yourcompany.mozzartpaper",
   "webDir": "www",
-  "pro": {
-    "platforms": [
-      "android"
-    ],
-    "android": {
-      "keystorePath": "MozzartTest.keystore",
-      "keystorePassword": "Prijepolje1983",
-      "keyAlias": "mozartalias",
-      "keyPassword": "Prijepolje1983"
-    }
+  "android": {
+    "keystorePath": "/data/data/com.termux/files/home/storage/downloads/MozzartTest.keystore",
+    "keystorePassword": "Prijepolje1983",
+    "keyAlias": "mozartalias",
+    "keyPassword": "Prijepolje1983"
   }
 }
