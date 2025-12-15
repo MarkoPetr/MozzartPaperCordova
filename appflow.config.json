@@ -8,7 +8,7 @@
       "android"
     ],
     "android": {
-      "keystorePath": "/data/data/com.termux/files/home/storage/downloads/MozzartTest.keystore",
+      "keystorePath": "MozzartTest.keystore",
       "keystorePassword": "Prijepolje1983",
       "keyAlias": "mozartalias",
       "keyPassword": "Prijepolje1983"
