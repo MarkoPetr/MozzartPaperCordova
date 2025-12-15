@@ -8,5 +8,13 @@
     "keystorePassword": "Prijepolje1983",
     "keyAlias": "mozartalias",
     "keyPassword": "Prijepolje1983"
+  },
+  "pro": {
+    "android": {
+      "keystorePath": "MozzartTest.keystore",
+      "keystorePassword": "Prijepolje1983",
+      "keyAlias": "mozartalias",
+      "keyPassword": "Prijepolje1983"
+    }
   }
-} 
+}
