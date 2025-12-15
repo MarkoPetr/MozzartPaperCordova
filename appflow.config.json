@@ -2,14 +2,5 @@
   "type": "cordova",
   "name": "MozzartPaperCordova",
   "id": "com.yourcompany.mozzartpaper",
-  "webDir": "www",
-  "cordova": {
-    "platforms": ["android"],
-    "android": {
-      "keystorePath": "MozzartTest.keystore",
-      "keystorePassword": "Prijepolje1983",
-      "keyAlias": "mozartalias",
-      "keyPassword": "Prijepolje1983"
-    }
-  }
+  "webDir": "www"
 }
