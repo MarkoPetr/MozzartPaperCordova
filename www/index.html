@@ -1,0 +1,37 @@
+<!-- minor update -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mozzart Digital Paper</title>
+  <script src="cordova.js"></script>
+</head>
+<body>
+  <h2>Mozzart Digital Paper</h2>
+  <button onclick="pickImage()">Izaberi screenshot</button>
+  <br><br>
+  <img id="screenshot" style="width:100%;border:1px solid #000;" />
+  
+<script>
+function pickImage() {
+    navigator.camera.getPicture(
+        function(uri) {
+            document.getElementById("screenshot").src = uri;
+        },
+        function(err) {
+            alert("Došlo je do greške: " + err);
+        },
+        {
+            quality: 100,
+            destinationType: Camera.DestinationType.FILE_URI,
+            sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+            allowEdit: false
+        }
+    );
+}
+document.addEventListener("deviceready", function() {
+    console.log("Cordova je spremna!");
+}, false);
+</script>
+</body>
+</html>
