@@ -1,0 +1,3 @@
+[33m44ee1af[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Move keystore to project root and fix Appflow path
+[33mc540386[m Force update appflow.config.json to latest keystore
+[33m17dbbf6[m Fix Appflow JSON for Android build compatibility
