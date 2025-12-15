@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mozzart Digital Paper</title>
+  <script src="cordova.js"></script>
+</head>
+<body>
+  <h2>Mozzart Digital Paper</h2>
+  <button onclick="pickImage()">Izaberi screenshot</button>
+  <br><br>
+  <img id="screenshot" style="width:100%;border:1px solid #000;" />
+  
+  <script>
+    function pickImage() {
+      navigator.camera.getPicture(
+        function(uri) {
+          document.getElementById('screenshot').src = uri;
+        },
+        function(err) {
+          alert('Greška: ' + err);
+        },
+        {
+          sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+          destinationType: Camera.DestinationType.FILE_URI
+        }
+      );
+    }
+  </script>
+</body>
+</html>
