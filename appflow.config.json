@@ -3,7 +3,7 @@
   "name": "MozzartPaperCordova",
   "id": "com.yourcompany.mozzartpaper",
   "webDir": "www",
-  "pro": {
+  "cordova": {
     "platforms": ["android"],
     "android": {
       "keystorePath": "MozzartTest.keystore",
