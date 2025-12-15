@@ -4,14 +4,14 @@
   "id": "com.yourcompany.mozzartpaper",
   "webDir": "www",
   "pro": {
-    "platforms": ["android"],
+    "platforms": [
+      "android"
+    ],
     "android": {
-      "keystore": {
-        "path": "downloads/MozzartPaper.keystore",
-        "password": "Prijepolje1983",
-        "alias": "MozzartAlias",
-        "aliasPassword": "Prijepolje1983"
-      }
+      "keystorePath": "/data/data/com.termux/files/home/storage/downloads/mozzartapp.keystore",
+      "keystorePassword": "Prijepolje1983",
+      "keyAlias": "mozzartapp_key",
+      "keyPassword": "Prijepolje1983"
     }
   }
 }
