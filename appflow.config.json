@@ -2,8 +2,16 @@
   "type": "cordova",
   "name": "MozzartPaperCordova",
   "id": "com.yourcompany.mozzartpaper",
+  "webDir": "www",
   "pro": {
-    "platforms": ["android"]
-  },
-  "webDir": "www"
+    "platforms": ["android"],
+    "android": {
+      "keystore": {
+        "path": "downloads/MozzartPaper.keystore",
+        "password": "Prijepolje1983",
+        "alias": "MozzartAlias",
+        "aliasPassword": "Prijepolje1983"
+      }
+    }
+  }
 }
