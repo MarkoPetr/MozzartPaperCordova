@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.mozzart.paper" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/uses-permission[@android:name='android.permission.WRITE_EXTERNAL_STORAGE']">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </edit-config>
+    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/uses-permission[@android:name='android.permission.READ_EXTERNAL_STORAGE']">
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    </edit-config>
     <name>MozzartPaper</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -11,12 +17,4 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <preference name="loglevel" value="DEBUG" />
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <allow-navigation href="cdvfile:*" />
 </widget>
