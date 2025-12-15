@@ -1,0 +1,9 @@
+{
+  "name": "mozzart-paper-cordova",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cordova app for viewing screenshots as digital paper",
+  "scripts": {
+    "build": "echo 'Cordova build handled by Appflow'"
+  }
+}
