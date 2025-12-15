@@ -4,6 +4,7 @@
   "id": "com.yourcompany.mozzartpaper",
   "webDir": "www",
   "pro": {
-    "platforms": ["android"]
+    "platforms": ["android"],
+    "android": {}
   }
 }
