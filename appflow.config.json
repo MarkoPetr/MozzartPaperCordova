@@ -5,6 +5,11 @@
   "webDir": "www",
   "pro": {
     "platforms": ["android"],
-    "android": {}
+    "android": {
+      "keystorePath": "MozzartTest.keystore",
+      "keystorePassword": "Prijepolje1983",
+      "keyAlias": "mozartalias",
+      "keyPassword": "Prijepolje1983"
+    }
   }
 }
