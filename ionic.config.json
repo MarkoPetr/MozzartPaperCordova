@@ -1,0 +1,7 @@
+{
+  "name": "MozzartPaperCordova",
+  "type": "angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
