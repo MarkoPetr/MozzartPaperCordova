@@ -12,21 +12,26 @@
   <br><br>
   <img id="screenshot" style="width:100%;border:1px solid #000;" />
   
-  <script>
-    function pickImage() {
-      navigator.camera.getPicture(
+<script>
+function pickImage() {
+    navigator.camera.getPicture(
         function(uri) {
-          document.getElementById('screenshot').src = uri;
+            document.getElementById("screenshot").src = uri;
         },
         function(err) {
-          alert('Greška: ' + err);
+            alert("Došlo je do greške: " + err);
         },
         {
-          sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
-          destinationType: Camera.DestinationType.FILE_URI
+            quality: 100,
+            destinationType: Camera.DestinationType.FILE_URI,
+            sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+            allowEdit: false
         }
-      );
-    }
-  </script>
+    );
+}
+document.addEventListener("deviceready", function() {
+    console.log("Cordova je spremna!");
+}, false);
+</script>
 </body>
 </html>
