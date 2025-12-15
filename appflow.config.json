@@ -1,6 +1,9 @@
 {
-  "app_id": "1e50071b",
-  "channel": "Production",
-  "platform": "android",
-  "web_dir": "www"
+  "type": "cordova",
+  "name": "MozzartPaperCordova",
+  "id": "com.yourcompany.mozzartpaper",
+  "pro": {
+    "platforms": ["android"]
+  },
+  "webDir": "www"
 }
